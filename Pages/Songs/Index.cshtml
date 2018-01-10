@@ -1,0 +1,9 @@
+@page
+@model Specification.Pages.Songs.IndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Songs</h2>
+
+@{ Html.RenderPartial("_Songs", Model.Songs); }

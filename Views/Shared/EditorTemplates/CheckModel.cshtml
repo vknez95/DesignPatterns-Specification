@@ -1,0 +1,6 @@
+@model Specification.Models.Shared.CheckModel
+
+<input asp-for="@Model.Checked" />
+<label asp-for="@Model.Checked">@Model.Name</label>
+<input asp-for="@Model.Name" type="hidden" />
+<input asp-for="@Model.Id" type="hidden" />

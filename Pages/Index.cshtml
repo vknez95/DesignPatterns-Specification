@@ -1,0 +1,70 @@
+﻿@page
+@model Specification.Pages.IndexModel
+@{
+    ViewData["Title"] = "Song List";
+}
+
+@using Newtonsoft.Json.Linq
+<h2>Music Library</h2>
+<form method="post">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 genres">
+                <h3>Genres</h3>
+                <input type="checkbox" id="allGenres" />All Genres
+                <ul class="nav nav-list">
+                    @for (var i = 0; i < Model.Genres.Count(); i++)
+                    {
+                        <li>
+                            @Html.EditorFor(model => model.Genres[i])
+                        </li>
+                    }
+                </ul>
+            </div>
+            <div class="col-lg-3 artists">
+                <h3>Artists</h3>
+                <input type="checkbox" id="allArtists" />All Artists
+                <ul class="nav nav-list">
+                    @for (var i = 0; i < Model.Artists.Count(); i++)
+                    {
+                        <li>
+                            @Html.EditorFor(model => model.Artists[i])
+                        </li>
+                    }
+                </ul>
+            </div>
+            <div class="col-lg-2">
+                Title: @Html.TextBox("titleSearch")
+            </div>
+            <div class="col-lg-2">
+                Min Rating: @Html.DropDownList("minRating", new SelectList(Model.Ratings))
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <input type="submit" name="Filter" value="Filter" />
+            </div>
+            <div class="col-lg-6">
+                Playlist Name: <input type="text" name="SmartPlaylist.Name"/>
+                <input type="submit" name="Save" value="Save Smartlist"/>
+            </div>
+        </div>
+    </div>
+</form>
+
+@{ Html.RenderPartial("_Songs", Model.Songs); }
+
+@section scripts
+{
+    <script>
+        $(function () {
+            $('#allGenres').click(function () {
+                $('.genres input:checkbox').not(this).prop('checked', this.checked);
+            });
+            $('#allArtists').click(function () {
+                $('.artists input:checkbox').not(this).prop('checked', this.checked);
+            });
+        });
+        
+    </script>
+}

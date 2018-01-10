@@ -1,0 +1,9 @@
+@page "{year:int}"
+@model Specification.Pages.Songs.ByYearModel
+@{
+    ViewData["Title"] = "By Year: " + Model.Year;
+}
+
+<h2>Songs By Year: @Model.Year</h2>
+
+@{ Html.RenderPartial("_Songs", Model.Songs); }

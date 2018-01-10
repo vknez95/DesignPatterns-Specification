@@ -1,0 +1,10 @@
+/Users/vknez/Documents/Programming/DesignPatterns/Specification/bin/Debug/netcoreapp2.0/Specification.deps.json
+/Users/vknez/Documents/Programming/DesignPatterns/Specification/bin/Debug/netcoreapp2.0/Specification.runtimeconfig.json
+/Users/vknez/Documents/Programming/DesignPatterns/Specification/bin/Debug/netcoreapp2.0/Specification.runtimeconfig.dev.json
+/Users/vknez/Documents/Programming/DesignPatterns/Specification/bin/Debug/netcoreapp2.0/Specification.dll
+/Users/vknez/Documents/Programming/DesignPatterns/Specification/bin/Debug/netcoreapp2.0/Specification.pdb
+/Users/vknez/Documents/Programming/DesignPatterns/Specification/obj/Debug/netcoreapp2.0/Specification.csproj.CoreCompileInputs.cache
+/Users/vknez/Documents/Programming/DesignPatterns/Specification/obj/Debug/netcoreapp2.0/Specification.AssemblyInfoInputs.cache
+/Users/vknez/Documents/Programming/DesignPatterns/Specification/obj/Debug/netcoreapp2.0/Specification.AssemblyInfo.cs
+/Users/vknez/Documents/Programming/DesignPatterns/Specification/obj/Debug/netcoreapp2.0/Specification.dll
+/Users/vknez/Documents/Programming/DesignPatterns/Specification/obj/Debug/netcoreapp2.0/Specification.pdb

@@ -1,0 +1,9 @@
+@page "{rating:int}"
+@model Specification.Pages.Songs.MinRatingModel
+@{
+    ViewData["Title"] = "Minimum Rating: " + Model.Rating;
+}
+
+<h2>Minimum Rating: @Model.Rating</h2>
+
+@{ Html.RenderPartial("_Songs", Model.Songs); }

@@ -1,0 +1,9 @@
+@page "{id:int}"
+@model Specification.Pages.Songs.ByAlbumModel
+@{
+    ViewData["Title"] = "By Album";
+}
+
+<h2>Songs By Album: @Model.Album</h2>
+
+@{ Html.RenderPartial("_Songs", Model.Songs); }
